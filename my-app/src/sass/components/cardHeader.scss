@@ -1,0 +1,57 @@
+@import"../../sass/base/varCardInfo.scss";
+.card-header {
+  margin-bottom: $header-margin-bottom;
+
+  h1 {
+    color: $primary-color;
+    font-size: $header-font-size;
+    margin: 0px;
+    
+  }
+
+  h4 {
+    font-size: $subheader-font-size;
+    color: $secondary-color;
+    margin: 5px 0;
+  }
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  margin-top: $host-info-margin-top;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
+  .host-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h3 {
+    margin: 0;
+    margin-right: 10px;
+    color:$primary-color;
+  }
+
+  img {
+    width: $host-image-size;
+    height: $host-image-size;
+    border-radius: 50%;
+  }
+  
+}
+
+.card-info {
+  display: block;
+}
+
+.location-rating {
+  margin-top: 10px;
+  width: 100%;
+}

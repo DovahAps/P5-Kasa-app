@@ -1,0 +1,43 @@
+@import "../../sass/base/varHeader.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $header-padding;
+  background-color: $header-bg-color;
+  max-width: 1200px;
+  width: calc(100% - 40px); 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+
+  .logo {
+    img {
+      height: 50px; 
+      width: auto; 
+    }
+  }
+
+  .nav {
+    display: flex; 
+    gap: $nav-link-margin-left; 
+
+    .nav-link {
+      color: $nav-link-color;
+      text-decoration: none;
+      font-size: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-link {
+      text-transform: uppercase; 
+      font-size: 16px; 
+      
+    }
+  }
+}

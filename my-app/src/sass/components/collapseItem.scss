@@ -1,0 +1,54 @@
+
+@import "../../sass/base/varCollapse.scss";
+
+.collapse-item {
+  background-color: $collapse-bg-color;
+  color: $collapse-text-color;
+  margin-bottom: $collapse-margin-bottom;
+  border-radius: $collapse-border-radius;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: $collapse-box-shadow;
+  transition: $collapse-transition;
+  width: $collapse-width; 
+  height: auto;
+
+  .collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $collapse-padding; 
+    font-size: $title-font-size; 
+    height: $title-height; 
+    transition: $title-transition;
+
+    h3 {
+      margin: 0; 
+      flex: 1; 
+      display: flex; 
+      align-items: center; 
+    }
+
+    .collapse-icon {
+      font-size: 18px; 
+      color: white; 
+    }
+  }
+
+  .collapse-content {
+    padding: $collapse-padding;
+    background-color: $content-bg-color;
+    color: $content-text-color;
+    font-size: $content-font-size;
+    border-top: 1px solid $content-border-color;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.collapse-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px; 
+}

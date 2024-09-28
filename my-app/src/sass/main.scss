@@ -1,0 +1,30 @@
+@import "./base/varBannerAbt.scss";
+@import "./base/varCardInfo.scss";
+@import "./base/varCards.scss";
+@import "./base/varCollapsAbt.scss";
+@import "./base/varCollapse.scss";
+@import "./base/vardCardSlider.scss";
+@import "./base/varHeader.scss";
+@import "./base/variablesBanner.scss";
+@import "./base/varRatings.scss";
+
+
+//  Components
+
+@import "./components/cardHeader.scss";
+@import "./components/cards.scss";
+@import "./components/CardsPage.scss";
+@import "./components/collapseItem.scss";
+
+// Layout
+@import "./layout/banner.scss";
+@import "./layout/bannerAbout.scss";
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+
+// Pages
+@import "./pages/errorPage.scss";
+
+// Utils
+@import "./utiles/rating.scss";
+@import "./utiles/tag.scss";

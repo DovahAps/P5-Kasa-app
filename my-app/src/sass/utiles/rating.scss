@@ -1,0 +1,24 @@
+@import "../../sass/base/varRatings.scss";
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: $rating-margin-top;
+
+  .filled-star {
+    color: $filled-star-color;
+    margin-right: $star-margin-right;
+    font-size: $star-font-size;
+  }
+
+  .empty-star {
+    color: $empty-star-color;
+    margin-right: $star-margin-right;
+    font-size: $star-font-size;
+  }
+
+  
+  .fa-star {
+    font-size: $star-font-size; 
+  }
+}

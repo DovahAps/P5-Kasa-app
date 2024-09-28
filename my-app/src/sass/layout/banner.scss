@@ -1,0 +1,55 @@
+@import "../../sass/base/variablesBanner.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.banner {
+  position: relative;
+  height: $banner-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $banner-color;
+  font-size: $banner-font-size;
+  font-weight: $banner-font-weight;
+  margin: $banner-margin;
+  border-radius: $banner-border-radius;
+  box-shadow: $banner-box-shadow;
+  max-width: $banner-max-width;
+  width: calc(100% - 40px);
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  .banner-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: $banner-border-radius; 
+    z-index: 0; 
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    border-radius: $banner-border-radius;
+  }
+
+  h1 {
+    padding: 20px;
+    position: relative;
+    z-index: 2; 
+    color: white; 
+  }
+}

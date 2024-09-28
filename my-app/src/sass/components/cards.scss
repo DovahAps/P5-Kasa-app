@@ -1,0 +1,54 @@
+@import "../../sass/base/varCards.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;  
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $grid-gap;
+  padding: $grid-padding;
+  background-color: $container-bg-color;
+  border-radius: $container-border-radius;
+  margin: 20px auto;
+  max-width: $container-max-width;
+  width: calc(100% - 40px);
+  box-shadow: $container-box-shadow;
+  @media (max-width: 768px) { 
+    grid-template-columns: 1fr; 
+  }
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  background-color: $card-bg-color;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  box-shadow: $card-box-shadow;
+  transition: transform 0.3s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: $card-hover-transform;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+  }
+
+  h2 {
+    padding: $card-text-padding;
+    color: $card-text-color;
+    font-size: $card-font-size;
+    justify-content: flex-start;
+    
+  }
+}
